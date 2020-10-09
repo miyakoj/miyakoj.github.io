@@ -1,0 +1,258 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Miyako Jones
+    tagline: Full Stack Developer
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    resume-doc: Miyako_Jones_resume.docx
+    resume-pdf: Miyako_Jones_resume.pdf
+
+    # Sidebar links
+    email: mtj@miyako.io
+    linkedin: miyakoj
+    github: miyakoj
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter: 
+    stack-overflow: 7843806/miyakoj # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+
+    languages:
+      - idiom: English
+        level: Native
+
+      - idiom: Japanese
+        level: Elementary
+
+    interests:
+      - item: Reading
+        link:
+
+      - item: Creative Writing
+        link:
+
+      - item: Video Games
+        link:
+
+      - item: Anime/manga
+        link:
+
+career-profile:
+    title: Summary
+    summary: |
+      4 years of combined experience with website development and software engineering. Organized, responsible, hard-working, a team player, and a self-starter.
+education:
+    - degree: MS in Computer Science and Information Systems
+      university: University of Michigan-Flint
+      gpa: 3.7/4.0
+      time: 2016
+      details:
+        - item: Software outreach student
+          link: https://blogs.umflint.edu/softwareoutreach/2016/01/28/hello-world/
+    - degree: BS in Computer Science (Honors)
+      university: University of Michigan-Flint
+      gpa: 3.61/4.0
+      time: 2012
+      details:
+        - item: 2012 Maize and Blue Scholar
+          link: https://news.umflint.edu/2012/11/19/um-flint-maize-and-blue-recipients-december-2012/
+        - item: 2009 Google Scholar
+          link: http://blog.mlive.com/higher-education/2009/09/university_of_michiganflint_st_1.html
+experiences:
+    - role: Software Engineer
+      time: Mar. 2017 - Present
+      company: Swiftlet Technology, Flint, MI
+      summary: Designed, developed, debugged, estimated, and maintained web, server, and desktop software.
+      details:
+        - item: Added functionality to existing websites using ASP.NET.
+        - item: Updated existing web application data integrations and databases using Entity Framework and SQL Server.
+        -  item: Developed tools using .NET, Node.js, and Groovy to interface with Jira in order to achieve business goals.
+        -  item: Developed an Odoo POS addon in JavaScript.
+        -  item: Developed an Electron-based application to work with SMART cryptocurrency wallets and a supporting JSON-RPC tool. (<a href="https://github.com/swiftlettech/smart-sweeper">SmartSweeper</a> | <a href="https://github.com/miyakoj/node-smartcash">node-smartcash</a>)
+        -  item: Ported an existing .NET Framework application to .NET Core.
+        -  item: Developed .NET UI applications using Winforms.
+        -  item: Utilized the Selenium Framework for web application testing.
+        -  item: Developed web and desktop applications to display simultaneous video streams.
+        -  item: Developed dashboard web application with Stripe integration using Angular 1 and PHP.
+        -  item: Developed and maintained WordPress sites.
+
+    - role: Contract Software Engineer
+      time: Jan. 2017 - Mar. 2017
+      company: Swiftlet Technology, Flint, MI
+      summary: Developed a web-based tool for YMCA youth to track environmental impact using Angular 1.
+
+    - role: Web Developer
+      time: May 2016 - Dec. 2016
+      company: University of Michigan-Flint, Flint, MI
+      summary: Developed web-based tools using HTML, CSS, JavaScript, AJAX, jQuery, Bootstrap, and PHP to assist Flint residents and city officials with navigating the Flint Water Crisis. (<a href="https://github.com/miyakoj/flintwaterpublic">Project repo</a>)
+      details:
+        - item: Worked with Google UX designers to develop a responsive, user-friendly website.
+        - item: Leading role in designing and developing backend logic to connect web tools to Google Cloud products such as Cloud Storage and Cloud SQL.
+        - item: Led a team of 4 developers in client-side and server-side development.
+        - item: Developed and released open source software.
+
+    - role: Office Assistant/Webmaster
+      time: Jan. 2013 - Jun. 2016
+      company: University of Michigan-Flint, Flint, MI
+      summary: Assisted program staff with the administration of the Honors Program.
+      details:
+        - item: Developed and maintained a SharePoint website and workflow processes for Honors off-campus applications.
+        - item: Developed and maintained a SharePoint site for Honors theses.
+        - item: Developed and edited content for the Honors Program website using Drupal.
+        - item: Communicated professionally with faculty, staff, students, and alumni.
+        - item: Assisted with the revision of business processes.
+        - item: Distributed information at student orientation sessions and assisted with student recruitment.
+        - item: Wrote and edited articles for the Honors Discovery newsletter and Honors blog.
+
+    - role: Graduate Student Research Assistant
+      time: Mar. 2016 - Apr. 2016
+      company: University of Michigan-Flint, Flint, MI
+      summary: Assisted with the research and development of software products.
+      details:
+        - item: Developed an editor using HTML, CSS, and JavaScript/jQuery for updating the Firebase database used for the <a href="https://blogs.umflint.edu/softwareoutreach/2016/02/07/h20flint-android-app-is-now-in-the-google-play-store/">h2oFlint Android app</a>.
+        - item: Researched solutions for a virtual lab system that integrated audio and video communications technology.
+
+    - role: Desktop Publisher/Web Developer/Research Assistant
+      time: Feb. 2009 – Dec. 2012
+      company: University of Michigan-Flint, Flint, MI
+      summary: Assisted with the creation and maintenance of the the Linden Legal Aid Centre website using HTML, CSS, JavaScript, and PHP
+      details:
+        - item: Designed the newsletter of the Linden Legal Aid Centre.
+        - item: Assisted with information research for the Linden Legal Aid Centre website and newsletter.
+        - item: Established variables and entered data using IBM SPSS software.
+
+    - role: Undergraduate Research Assistant
+      time: Oct. 2011 – Dec. 2011
+      company: University of Michigan-Flint, Flint, MI
+      summary: Developed a website for a Philosophy professor using HTML, CSS, and JavaScript as well as conducted research on his scholarly impact.
+
+    - role: Student Researcher
+      time: May. 2009 - Jul. 2009
+      company: Georgia Institute of Technology, Atlanta, GA
+      summary: Worked with Dr. Ayanna Howard at the Georgia Institute of Technology as a participant in the <a href="http://sure.gatech.edu">Summer Undergraduate Research Experience in Engineering/Science Program</a> sponsored by NSF.
+
+    - role: Office Assistant/Webmaster
+      time: May 2008 – Apr. 2009
+      company: University of Michigan-Flint, Flint, MI
+      summary: Assisted faculty and staff with the administration of the Philosophy department.
+      details:
+        - item: Answered telephone calls using a multi-line system.
+        - item: Answered questions from staff and students.
+        - item: Maintained department website.
+        - item: Digitized course materials.
+
+    - role: Website Developer/Webmaster
+      time: Aug. 2007 – Apr. 2009
+      company: University of Michigan-Flint, Flint, MI
+      summary: Created and maintained the websites of several academic departments and programs using HTML, CSS, and JavaScript.
+      details:
+        - item: Designed and developed informational pop-ups for department courses.
+        - item: Created instructor web pages.
+        - item: Updated information and maintained its accuracy.
+        - item: Utilized a content management system to maintain web pages.
+
+projects:
+    title: Projects
+    intro: 
+    assignments:
+      - title: LibManToUpdate
+        link: https://github.com/miyakoj/LibManToUpdate
+        tagline: A utility that finds libraries with updates in your libman.json.
+
+      - title: node-smartcash
+        link: https://github.com/miyakoj/node-smartcash
+        tagline: Communicate with SmartCash Core (SmartCash Node Client) via JSON-RPC.
+
+      - title: javascript-natural-multisort
+        link: https://github.com/miyakoj/javascript-natural-multisort
+        tagline: Sort arrays of objects or simple one-dimensional arrays "naturally" in JavaScript.
+
+      - title: angularjs-natural-sort
+        link: https://github.com/miyakoj/angularjs-natural-sort
+        tagline: Sort arrays of objects or simple one-dimensional arrays "naturally" in AngularJS.
+
+publications:
+    title: Presentations and Publications
+    intro: 
+    papers:
+      - title: 
+        link: 
+        authors: 
+        conference: 
+
+volunteering:
+    - role: Volunteer Software Developer
+      time: Sep. 2009 – Jun. 2012
+      organization: University of Michigan-Flint (Dept. of Nursing)
+      summary: Worked with a team to develop a transcultural nursing educational game for undergraduates.
+      details:
+        - item: Created UML-based software artifacts such as use cases and sequence diagrams.
+        - item: Wrote a software requirements specification for a software component.
+        - item: Constructed companion software for the nursing game using Java.
+        - item: Created PHP scripts to transfer data from a Flash application to a remote MySQL database.
+
+    - role: Volunteer Software Developer
+      time: May 2010 – Aug. 2010
+      organization: University of Michigan-Flint (Dept. of Biology)
+      summary: Worked with a team to design a biology/chemistry educational game for undergraduates using the framework developed for the Department of Nursing.
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: HTML & CSS
+        level: 99%
+
+      - name: JavaScript & jQuery
+        level: 95%
+
+      - name: Bootstrap 3 & 4
+        level: 99%
+
+      - name: Node.js
+        level: 90%
+
+      - name: C#
+        level: 85%
+
+      - name: ASP.NET MVC (Framework & Core)
+        level: 90%
+
+      - name: ASP.NET Web API (Framework & Core)
+        level: 90%
+
+      - name: .NET Desktop (Framework & Core)
+        level: 70%
+
+      - name: Vue.js 2
+        level: 90%
+
+      - name: Angular 1
+        level: 85%
+
+      - name: PHP
+        level: 90%
+
+      - name: SQL
+        level: 90%
+
+      - name: C++
+        level: 70%
+
+      - name: Java
+        level: 80%
+
+      - name: Python
+        level: 30%
+      
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

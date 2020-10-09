@@ -1,0 +1,41 @@
+{% assign volunteering = site.data.data.volunteering %}
+{% if volunteering %}
+<section class="section volunteer-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-heart fa-stack-1x fa-inverse"></i>
+    </span>
+    Volunteer Experiences
+  </h2>
+
+  {% for volunteer in volunteering %}
+  <div class="item">
+
+    <div class="meta">
+
+      <div class="upper-row">
+        <h3 class="job-title">{{ volunteer.role }}</h3>
+        <div class="time">{{ volunteer.time }}</div>
+      </div><!--//upper-row-->
+
+      <div class="company">{{ volunteer.organization }}</div>
+
+    </div><!--//meta-->
+
+    <div class="summary">{{ volunteer.summary }}</div>
+
+    {% if volunteer.details %}
+    <ul class="custom-list">
+      {% for detail in volunteer.details %}
+      <li>{{ detail.item }}</li>
+      {% endfor %}
+    </ul><!--//details-->
+    {% endif %}
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
+

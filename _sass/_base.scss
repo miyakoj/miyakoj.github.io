@@ -227,10 +227,13 @@ p {
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 5px;
-	color: darken($theme-color, 15%);
+	    color: darken($theme-color, 10%);
     }
     .projects-section {
         .intro {
+            margin-bottom: 30px;
+        }
+        .category-section {
             margin-bottom: 30px;
         }
         .item {

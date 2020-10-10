@@ -16,22 +16,43 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% for project in projects.assignments %}
-    <div class="item">
+  {% for category in projects.categories %}
+    <h4 class="category-name">{{category.name}}</h4>
 
-      <span class="project-title">
-        {% if project.link %}
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        {% else %}
-        {{ project.title }}
-        {% endif %}
-      </span>
+    <div class="category-section">
+      {% for project in category.assignments %}
+      
+        <div class="item">
+          <span class="project-title">
+            {% if project.link %}
+              {% if project.link contains "http" %}
+              <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+              {% else %}
+              <a href="{{ site.baseurl }}/assets/{{ project.link }}" target="_blank">{{ project.title }}</a>
+              {% endif %}
+            {% else %}
+            {{ project.title }}
+            {% endif %}
+          </span>
 
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
-      {% endif %}
+          {% if project.tagline %}
+          - <span class="project-tagline">{{ project.tagline }}</span>
+          {% endif %}
 
-    </div><!--//item-->
+          {% if project.links %}
+            {% for sublink in project.links %}
+              {{ sublink | inspect }}
+              {% if sublink.link contains "http" %}
+              <a href="{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
+              {% else %}
+              <a href="{{ site.baseurl }}/assets/{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+        </div><!--//item-->
+      {% endfor %}
+    </div><!--//category-section-->
   {% endfor %}
 
 </section><!--//section-->

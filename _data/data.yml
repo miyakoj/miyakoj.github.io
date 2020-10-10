@@ -162,22 +162,66 @@ experiences:
 projects:
     title: Projects
     intro: 
-    assignments:
-      - title: LibManToUpdate
-        link: https://github.com/miyakoj/LibManToUpdate
-        tagline: A utility that finds libraries with updates in your libman.json.
+    categories:
+      - name: Current
+        assignments:
+          - title: eBook creator
+            link: 
+            tagline: An app that takes online fanfiction and original stories and transforms them into eBooks for easy reading on tablets. I was semi-inspired by the way <a href="http://archiveofourown.org">Archive of Our Own</a> allows you to import the chapters of your fanfic from a different site.
 
-      - title: node-smartcash
-        link: https://github.com/miyakoj/node-smartcash
-        tagline: Communicate with SmartCash Core (SmartCash Node Client) via JSON-RPC.
+      - name: Possible
+        assignments:
+          - title: Modification to a .NET Framework custom file/folder browser dialog
+            link: 
+            tagline: Modification to add file type filtering.
+          
+          - title: Anime fan social site
+            link: 
+            tagline: There are very few sites where anime/manga/Japanese culture fans can go for social interaction that isn’t a forum. I want to incorporate features like user matching and groups.
 
-      - title: javascript-natural-multisort
-        link: https://github.com/miyakoj/javascript-natural-multisort
-        tagline: Sort arrays of objects or simple one-dimensional arrays "naturally" in JavaScript.
+          - title: Modification to my undergraduate Honors thesis
+            link: 
+            tagline: I want to parallelize it to improve performance. Also, I need to modify it so that it only optimizes style sheets.
 
-      - title: angularjs-natural-sort
-        link: https://github.com/miyakoj/angularjs-natural-sort
-        tagline: Sort arrays of objects or simple one-dimensional arrays "naturally" in AngularJS.
+          - title: Fiction title generator
+            link: 
+            tagline: Generates titles for stories. Will have various configuration options.
+
+      - name: Completed
+        assignments:
+          - title: LibManToUpdate
+            link: https://github.com/miyakoj/LibManToUpdate
+            tagline: A utility that finds libraries with updates in your libman.json.
+
+          - title: node-smartcash
+            link: https://github.com/miyakoj/node-smartcash
+            tagline: Communicate with SmartCash Core (SmartCash Node Client) via JSON-RPC.
+
+          - title: javascript-natural-multisort
+            link: https://github.com/miyakoj/javascript-natural-multisort
+            tagline: Sort arrays of objects or simple one-dimensional arrays "naturally" in JavaScript.
+
+          - title: angularjs-natural-sort
+            link: https://github.com/miyakoj/angularjs-natural-sort
+            tagline: Sort arrays of objects or simple one-dimensional arrays "naturally" in AngularJS.
+
+          - title: Undergraduate Honors thesis
+            link: docs/Miyako_Jones_thesis_2012.pdf
+            tagline: "I became interested in genetic algorithms during my participation in the SURE program at Georgia Tech. I found a <a href='http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.6918'>paper by a team of French researchers</a> that used an interactive genetic algorithm to create website designs, but it used vectors instead of bit strings. The project consists of two parts: a paper and a program written in PHP, which were both successfully completed in December 2012."
+
+          - title: Undergraduate capstone project
+            link:
+            tagline: I worked with a group of three other Computer Science students to create an Electronic Medical Records (EMR) app for an Android tablet. It was successfully completed April 2012.
+            links:
+              sublink:
+                - title: Screenshot 1
+                  link: images/EMR/emr_patient-search-screenshot.jpg
+              sublink:
+                - title: Screenshot 2
+                  link: images/EMR/emr_patient-form-screenshot.jpg"
+              sublink:
+                - title: Use-Case Diagram
+                  link: images/EMR/emr_use-case-diagram.png
 
 publications:
     title: Presentations and Publications

@@ -9,6 +9,7 @@ sidebar:
     # Profile information
     name: Miyako Jones
     tagline: Full Stack Developer
+    personality: INTJ, 5w6
     avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
     resume-doc: Miyako_Jones_resume.docx
     resume-pdf: Miyako_Jones_resume.pdf
@@ -25,6 +26,26 @@ sidebar:
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
+    # Page bookmarks
+    bookmarks:
+      - title: Skills
+        link: skills
+
+      - title: Experience
+        link: experience
+
+      - title: Volunteer
+        link: volunteer
+
+      - title: Projects
+        link: projects
+
+      - title: Showcase
+        link: showcase
+
+      - title: Publications
+        link: pubs
+
     languages:
       - idiom: English
         level: Native
@@ -33,6 +54,9 @@ sidebar:
         level: Elementary
 
     interests:
+      - item: Coding
+        link:
+
       - item: Reading
         link:
 
@@ -42,7 +66,10 @@ sidebar:
       - item: Video Games
         link:
 
-      - item: Anime/manga
+      - item: Sci-fi & Fantasy
+        link:
+
+      - item: Anime & Manga
         link:
 
 career-profile:
@@ -212,25 +239,81 @@ projects:
           - title: Undergraduate capstone project
             link:
             tagline: I worked with a group of three other Computer Science students to create an Electronic Medical Records (EMR) app for an Android tablet. It was successfully completed April 2012.
-            links:
-              sublink:
-                - title: Screenshot 1
-                  link: images/EMR/emr_patient-search-screenshot.jpg
-              sublink:
-                - title: Screenshot 2
-                  link: images/EMR/emr_patient-form-screenshot.jpg"
-              sublink:
-                - title: Use-Case Diagram
-                  link: images/EMR/emr_use-case-diagram.png
+            docs:
+              - title: Screenshot 1
+                link: images/EMR/emr_patient-search-screenshot.jpg
+
+              - title: Screenshot 2
+                link: images/EMR/emr_patient-form-screenshot.jpg"
+
+              - title: Use Case Diagram
+                link: images/EMR/emr_use-case-diagram.png
+
+showcase:
+  title: showcase
+  categories:
+    - name: Websites
+      items:
+        - title: FortrezZ Dashboard
+          thumb: images/websites/FortrezZ_thumb.jpg
+          link: images/websites/FortrezZ.png
+
+        - title: Dr. L. Nathan Oaklander's Personal Website
+          thumb: images/websites/lno_thumb.jpg
+          link: images/websites/lno.jpg
 
 publications:
     title: Presentations and Publications
     intro: 
-    papers:
-      - title: 
-        link: 
-        authors: 
-        conference: 
+    categories:
+      - name: Primary Author
+        papers:
+          - title: Auto-Design of Web Pages Using an Interactive Genetic Algorithm
+            link: https://www.umflint.edu/sites/default/files/groups/Research_and_Sponsored_Programs/SRC/2013/m.jones_.pdf
+            conference: UM-Flint Student Research Conference Proceedings (2013)
+            docs:
+              - title: Conference Poster
+                link: images/posters/IGA_poster.png
+
+          - title: Using a Computer to Engage Children with Cerebral Palsy
+            link: images/posters/MOM2010.png
+            conference: Meeting of Minds Student Research Conference (2010)
+
+          - title: Exploring Ways to Engage Children with Cerebral Palsy
+            link: http://vip.gatech.edu/wiki/images/c/ce/CerebralPalsy_final_paper.pdf
+            conference: SURE Program Participant Write-Up (2009)
+            docs:
+              - title: Presentation Slides
+                link: docs/SURE_presentation.pdf
+
+          - title: Table to tableless migration
+            link: http://www.killersites.com/magazine/2009/table-to-tableless
+            conference: Killersites Web Design Magazine (2009)
+
+      - name: Co-Author
+        papers:
+          - title: Development of an extensible game architecture for teaching transcultural nursing
+            link: "https://www.researchgate.net/publication/289839580_Development_of_an_Extensible_Game_Architecture_for_Teaching_Transcultural_Nursing"
+            authors: Dr. Hiba Wehbe-Alamah, Dr. Michael E. Farmer, Dr. Marilyn McFarland, Alec Tower, Miyako Jones, Vidhin Shah, and Joyce El-Hayek
+            conference: Online Journal of Cultural Competence in Nursing and Healthcare (2015)
+
+          - title: "CultureCopia©: Developing a computer-based electronic transcultural simulation game based on Leininger's culture care theory."
+            link: "https://www.researchgate.net/publication/269937746_CultureCopiac_Developing_a_Computer-based_Electronic_Transcultural_Simulation_Game_Based_on_Leininger's_Culture_Care_Theory"
+            authors: Dr. Hiba Wehbe-Alamah, Dr. Michael E. Farmer, Dr. Marilyn McFarland, Miyako Jones, Crystal Call
+            conference: Online Journal of Cultural Competence in Nursing and Healthcare (2012)
+            docs:
+              - title: Poster presented at the 2010 Transcultural Nursing Society Conference
+                link: images/posters/TCNSC2010.png
+
+          - title: Development of an Extensible Game Architecture for Teaching Trans-cultural Nursing
+            link: https://www.researchgate.net/publication/256294885_Development_of_an_Extensible_Game_Architecture_for_Teaching_Transcultural_Nursing
+            authors: Dr. Michael E. Farmer, Dr. Hiba Wehbe-Alamah, Dr. Marilyn McFarland, Alec Tower, Miyako Jones, Vidhin Shah, and Joyce El-Hayek
+            conference: Midwestern Conference on Health Games (2010)
+
+          - title: Engaging children with severe physical disabilities via teleoperated control of a robot piano player
+            link: http://vip.gatech.edu/wiki/images/6/65/Robotpianoplayer.pdf
+            authors: Miyako Jones, Terrence Trapp, Naquasia Jones, Douglas Brooks, Dr. Ayanna M. Howard
+            conference: Georgia Institute of Technology (2010)
 
 volunteering:
     - role: Volunteer Software Developer
@@ -249,7 +332,7 @@ volunteering:
       summary: Worked with a team to design a biology/chemistry educational game for undergraduates using the framework developed for the Department of Nursing.
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Skills & Proficiency
 
     toolset:
       - name: HTML & CSS
@@ -273,8 +356,11 @@ skills:
       - name: ASP.NET Web API (Framework & Core)
         level: 90%
 
-      - name: .NET Desktop (Framework & Core)
-        level: 70%
+      - name: .NET Framework Winforms
+        level: 80%
+
+      - name: .NET Core WPF
+        level: 80%
 
       - name: Vue.js 2
         level: 90%
@@ -293,6 +379,9 @@ skills:
 
       - name: Java
         level: 80%
+
+      - name: Groovy
+        level: 25%
 
       - name: Python
         level: 30%

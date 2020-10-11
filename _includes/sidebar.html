@@ -15,6 +15,10 @@
     <h3 class="tagline">{{ sidebar.tagline }}</h3>
     {% endif %}
 
+    {% if sidebar.personality %}
+    <h5 class="personality">({{ sidebar.personality }})</h5>
+    {% endif %}
+
     <div class="resume-links">
       {% if sidebar.resume-doc %}
       <a href="{{ site.baseurl }}/assets/docs/{{sidebar.resume-doc}}" title="Word document version of resume"><i class="far fa-file-word"></i></a>
@@ -27,6 +31,10 @@
   </div><!--//profile-container-->
 
   {% include contact.html %}
+
+  {% if sidebar.bookmarks %}
+    {% include bookmarks.html %}
+  {% endif %}
 
   {% if sidebar.education %}
     {% include education.html %}

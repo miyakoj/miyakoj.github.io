@@ -2,7 +2,7 @@
 {% if projects %}
 <section class="section projects-section">
 
-  <h2 class="section-title">
+  <h2 id="projects" class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
@@ -25,7 +25,7 @@
         <div class="item">
           <span class="project-title">
             {% if project.link %}
-              {% if project.link contains "http" %}
+              {% if project.link contains "http://" or project.link contains "https://" %}
               <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
               {% else %}
               <a href="{{ site.baseurl }}/assets/{{ project.link }}" target="_blank">{{ project.title }}</a>
@@ -39,15 +39,18 @@
           - <span class="project-tagline">{{ project.tagline }}</span>
           {% endif %}
 
-          {% if project.links %}
-            {% for sublink in project.links %}
-              {{ sublink | inspect }}
-              {% if sublink.link contains "http" %}
-              <a href="{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
-              {% else %}
-              <a href="{{ site.baseurl }}/assets/{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
-              {% endif %}
+          {% if project.docs %}
+            <ul class="project-docs">
+            {% for sublink in project.docs %}
+              <li>
+                {% if sublink.link contains "http://" or sublink.link contains "https://" %}
+                <a href="{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
+                {% else %}
+                <a href="{{ site.baseurl }}/assets/{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
+                {% endif %}
+              </li>
             {% endfor %}
+            </ul>
           {% endif %}
 
         </div><!--//item-->

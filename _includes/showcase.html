@@ -1,0 +1,24 @@
+{% assign showcase = site.data.data.showcase %}
+{% if showcase %}
+  <section class="section showcase-section">
+    <h2 id="showcase" class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-th-large fa-stack-1x fa-inverse"></i>
+      </span>
+      {{ showcase.title }}
+    </h2>
+
+    <div>
+      {% for category in showcase.categories %}
+      <div class="flexbox">
+        {% for item in category.items %}
+        <a href="{{ site.baseurl }}/assets/{{ item.link }}" target="_blank">
+          <img src="{{ site.baseurl }}/assets/{{ item.thumb }}" class="img-thumbnail" />
+        </a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

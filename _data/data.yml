@@ -24,6 +24,7 @@ sidebar:
     twitter: 
     stack-overflow: 7843806/miyakoj # Number/Username, e.g. 123456/alandoe
     codewars:
+    codepen: miyakoj
     goodreads: # Number-Username, e.g. 123456-alandoe
 
     # Page bookmarks
@@ -63,7 +64,7 @@ sidebar:
       - item: Creative Writing
         link:
 
-      - item: Video Games
+      - item: RPG Video Games
         link:
 
       - item: Sci-fi & Fantasy

@@ -90,11 +90,22 @@ p {
         border-radius: 100%;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
+
     .resume-links {
+        margin-top: 20px;
+    }
+    .cv-links {
         margin-top: 10px;
-        font-size: 25px;
-        a {
-            margin: 10px;
+    }
+    .resume-links, .cv-links {
+        span {
+            text-align: center;
+        }
+        div {
+            a {
+                margin: 0 10px;
+                font-size: 25px;
+            }
         }
     }
     .contact-list {
@@ -269,14 +280,11 @@ p {
             display: flex;
             flex-wrap: wrap;
             align-self: stretch;
-
-            a {
-                margin-right: 10px;
-            }
         }
         .img-thumbnail {
             width: auto;
             height: 100%;
+            margin: 0 10px 10px 0;
             border: 1px solid #ddd;
         }
     }

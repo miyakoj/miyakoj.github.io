@@ -20,13 +20,31 @@
     {% endif %}
 
     <div class="resume-links">
-      {% if sidebar.resume-doc %}
-      <a href="{{ site.baseurl }}/assets/docs/{{sidebar.resume-doc}}" title="Word document version of resume"><i class="far fa-file-word"></i></a>
-      {% endif %}
+      <span>Resume</span>
 
-      {% if sidebar.resume-pdf %}
-      <a href="{{ site.baseurl }}/assets/docs/{{sidebar.resume-pdf}}" title="PDF version of resume"><i class="far fa-file-pdf"></i></a>
-      {% endif %}
+      <div>
+        {% if sidebar.resume-doc %}
+        <a href="{{ site.baseurl }}/assets/docs/{{sidebar.resume-doc}}" title="Word document version of resume"><i class="far fa-file-word"></i></a>
+        {% endif %}
+
+        {% if sidebar.resume-pdf %}
+        <a href="{{ site.baseurl }}/assets/docs/{{sidebar.resume-pdf}}" title="PDF version of resume"><i class="far fa-file-pdf"></i></a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="cv-links">
+      <span>CV</span>
+
+      <div>
+        {% if sidebar.cv-doc %}
+        <a href="{{ site.baseurl }}/assets/docs/{{sidebar.cv-doc}}" title="Word document version of CV"><i class="far fa-file-word"></i></a>
+        {% endif %}
+
+        {% if sidebar.cv-pdf %}
+        <a href="{{ site.baseurl }}/assets/docs/{{sidebar.cv-pdf}}" title="PDF version of CV"><i class="far fa-file-pdf"></i></a>
+        {% endif %}
+      </div>
     </div>
   </div><!--//profile-container-->
 

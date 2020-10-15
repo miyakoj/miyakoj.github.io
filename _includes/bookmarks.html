@@ -6,7 +6,7 @@
   <div>
     <ul>
       {% for bookmark in bookmarks %}
-      <li><a href="#{{bookmark.link}}">{{bookmark.title}}</a></li>
+      <li id="{{bookmark.link}}-bookmark"><a href="#{{bookmark.link}}">{{bookmark.title}}</a></li>
       {% endfor %}
     </ul>
   </div>

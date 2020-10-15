@@ -16,6 +16,17 @@
     </div>
   </div>
 
+  <div id="imgLightbox" onclick="imgLightbox.close();">
+    <div id="imgLightbox-button-area">
+      <a title="download and close" id="imgLightbox-button-download">
+        <span class="imgLightbox-button"><i class="fas fa-arrow-alt-circle-down"></i></span>
+      </a>
+      <span title="close" class="imgLightbox-button" onclick="imgLightbox.close();"><i class="fas fa-times-circle"></i></span>
+    </div>
+
+    <div id="imgLightbox-image-area"></div>
+  </div>
+
   {% include footer.html %}
 
 {% include scripts.html %}

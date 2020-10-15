@@ -9,13 +9,12 @@
       {{ showcase.title }}
     </h2>
 
-    <div>
+    <div id="showcase-items">
       {% for category in showcase.categories %}
       <div class="flexbox">
         {% for item in category.items %}
-        <a href="{{ site.baseurl }}/assets/{{ item.link }}" target="_blank">
-          <img src="{{ site.baseurl }}/assets/{{ item.thumb }}" class="img-thumbnail" />
-        </a>
+          <img src="{{ site.baseurl }}/assets/{{ item.thumb }}" class="img-thumbnail" 
+            onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ item.link }}', true);" />
         {% endfor %}
       </div>
       {% endfor %}

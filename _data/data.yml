@@ -13,6 +13,8 @@ sidebar:
     avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
     resume-doc: Miyako_Jones_resume.docx
     resume-pdf: Miyako_Jones_resume.pdf
+    cv-doc: Miyako_Jones_CV.docx
+    cv-pdf: Miyako_Jones_CV.pdf
 
     # Sidebar links
     email: mtj@miyako.io
@@ -29,6 +31,9 @@ sidebar:
 
     # Page bookmarks
     bookmarks:
+      - title: Summary
+        link: summary
+
       - title: Skills
         link: skills
 
@@ -197,24 +202,6 @@ projects:
             link: 
             tagline: An app that takes online fanfiction and original stories and transforms them into eBooks for easy reading on tablets. I was semi-inspired by the way <a href="http://archiveofourown.org">Archive of Our Own</a> allows you to import the chapters of your fanfic from a different site.
 
-      - name: Possible
-        assignments:
-          - title: Modification to a .NET Framework custom file/folder browser dialog
-            link: 
-            tagline: Modification to add file type filtering.
-          
-          - title: Anime fan social site
-            link: 
-            tagline: There are very few sites where anime/manga/Japanese culture fans can go for social interaction that isn’t a forum. I want to incorporate features like user matching and groups.
-
-          - title: Modification to my undergraduate Honors thesis
-            link: 
-            tagline: I want to parallelize it to improve performance. Also, I need to modify it so that it only optimizes style sheets.
-
-          - title: Fiction title generator
-            link: 
-            tagline: Generates titles for stories. Will have various configuration options.
-
       - name: Completed
         assignments:
           - title: LibManToUpdate
@@ -249,6 +236,24 @@ projects:
 
               - title: Use Case Diagram
                 link: images/EMR/emr_use-case-diagram.png
+
+      - name: Possible
+        assignments:
+          - title: Modification to a .NET Framework custom file/folder browser dialog
+            link: 
+            tagline: Modification to add file type filtering.
+          
+          - title: Anime fan social site
+            link: 
+            tagline: There are very few sites where anime/manga/Japanese culture fans can go for social interaction that isn’t a forum. I want to incorporate features like user matching and groups.
+
+          - title: Modification to my undergraduate Honors thesis
+            link: 
+            tagline: I want to parallelize it to improve performance. Also, I need to modify it so that it only optimizes style sheets.
+
+          - title: Fiction title generator
+            link: 
+            tagline: Generates titles for stories. Will have various configuration options.
 
 showcase:
   title: showcase
@@ -346,7 +351,7 @@ skills:
         level: 99%
 
       - name: Node.js
-        level: 90%
+        level: 85%
 
       - name: C#
         level: 85%
@@ -381,11 +386,11 @@ skills:
       - name: Java
         level: 80%
 
-      - name: Groovy
-        level: 25%
-
       - name: Python
         level: 30%
+
+      - name: Groovy
+        level: 25%
       
 
 footer: >

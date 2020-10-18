@@ -18,7 +18,11 @@
       <div class="details">
         <ul class="custom-list">
           {% for detail in graduation.details %}
-          <li><a href="{{detail.link}}">{{detail.item}}</a></li>
+            {% if detail.link %}
+            <li><a href="{{detail.link}}">{{detail.item}}</a></li>
+            {% else %}
+            <li>{{detail.item}}</li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
@@ -55,7 +59,11 @@
       {% if graduation.details %}
         <ul>
           {% for detail in graduation.details %}
-          <li><a href="{{detail.link}}">{{detail.item}}</a></li>
+            {% if detail.link %}
+            <li><a href="{{detail.link}}">{{detail.item}}</a></li>
+            {% else %}
+            <li>{{detail.item}}</li>
+            {% endif %}
           {% endfor %}
         </ul>
       {% endif %}

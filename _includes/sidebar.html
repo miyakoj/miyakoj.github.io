@@ -15,6 +15,10 @@
     <h3 class="tagline">{{ sidebar.tagline }}</h3>
     {% endif %}
 
+    {% if sidebar.pronouns %}
+    <h5 class="pronouns"><strong>Pronouns:</strong> {{ sidebar.pronouns }}</h5>
+    {% endif %}
+
     {% if sidebar.personality %}
     <h5 class="personality">({{ sidebar.personality }})</h5>
     {% endif %}

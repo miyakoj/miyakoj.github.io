@@ -71,12 +71,15 @@ p {
         margin-top: 0;
         margin-bottom: 10px;
     }
-    .personality {
+    .pronouns, .personality {
         color: rgba(256, 256, 256, 0.6);
         font-size: 14px;
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
+    }
+    .pronouns {
+        margin-bottom: 10px;
     }
     .profile {
         margin-bottom: 15px;

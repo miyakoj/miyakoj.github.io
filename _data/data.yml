@@ -9,6 +9,7 @@ sidebar:
     # Profile information
     name: Miyako Jones
     tagline: Full Stack Developer
+    pronouns: She/her
     personality: INTJ, 5w6
     avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
     resume-doc: Miyako_Jones_resume.docx
@@ -82,23 +83,84 @@ career-profile:
     title: Summary
     summary: |
       4 years of combined experience with website development and software engineering. Organized, responsible, hard-working, a team player, and a self-starter.
+
+skills:
+    title: Skills & Proficiency
+
+    toolset:
+      - name: HTML & CSS
+        level: 99%
+
+      - name: JavaScript & jQuery
+        level: 95%
+
+      - name: Bootstrap 3 & 4
+        level: 99%
+
+      - name: Node.js
+        level: 85%
+
+      - name: C#
+        level: 85%
+
+      - name: ASP.NET MVC (Framework & Core)
+        level: 90%
+
+      - name: ASP.NET Web API (Framework & Core)
+        level: 90%
+
+      - name: .NET Framework Winforms
+        level: 80%
+
+      - name: .NET Core WPF
+        level: 80%
+
+      - name: Vue.js 2
+        level: 90%
+
+      - name: Angular 1
+        level: 85%
+
+      - name: PHP
+        level: 90%
+
+      - name: SQL
+        level: 90%
+
+      - name: C++
+        level: 70%
+
+      - name: Java
+        level: 80%
+
+      - name: Python
+        level: 30%
+
+      - name: Groovy
+        level: 25%
+
 education:
     - degree: MS in Computer Science and Information Systems
       university: University of Michigan-Flint
       gpa: 3.7/4.0
-      time: 2016
+      time: April 2016
       details:
         - item: Software outreach student
           link: https://blogs.umflint.edu/softwareoutreach/2016/01/28/hello-world/
     - degree: BS in Computer Science (Honors)
       university: University of Michigan-Flint
       gpa: 3.61/4.0
-      time: 2012
+      time: December 2012
       details:
+        - item: "Minor: Computer Information Systems"
+          link: 
         - item: 2012 Maize and Blue Scholar
           link: https://news.umflint.edu/2012/11/19/um-flint-maize-and-blue-recipients-december-2012/
         - item: 2009 Google Scholar
           link: http://blog.mlive.com/higher-education/2009/09/university_of_michiganflint_st_1.html
+        - item: Sigma Tau Delta Alumna
+          link: http://www.english.org
+
 experiences:
     - role: Software Engineer
       time: Mar. 2017 - Present
@@ -143,7 +205,7 @@ experiences:
         - item: Communicated professionally with faculty, staff, students, and alumni.
         - item: Assisted with the revision of business processes.
         - item: Distributed information at student orientation sessions and assisted with student recruitment.
-        - item: Wrote and edited articles for the Honors Discovery newsletter and Honors blog.
+        - item: Wrote and edited articles for the <a href="https://www.umflint.edu/honors/honors-program-newsletter">Honors Discovery newsletter</a> and <a href="https://blogs.umflint.edu/honors/?s=Miyako+Jones">Honors blog</a>.
 
     - role: Graduate Student Research Assistant
       time: Mar. 2016 - Apr. 2016
@@ -232,7 +294,7 @@ projects:
                 link: images/EMR/emr_patient-search-screenshot.jpg
 
               - title: Screenshot 2
-                link: images/EMR/emr_patient-form-screenshot.jpg"
+                link: images/EMR/emr_patient-form-screenshot.jpg
 
               - title: Use Case Diagram
                 link: images/EMR/emr_use-case-diagram.png
@@ -335,63 +397,7 @@ volunteering:
     - role: Volunteer Software Developer
       time: May 2010 – Aug. 2010
       organization: University of Michigan-Flint (Dept. of Biology)
-      summary: Worked with a team to design a biology/chemistry educational game for undergraduates using the framework developed for the Department of Nursing.
-
-skills:
-    title: Skills & Proficiency
-
-    toolset:
-      - name: HTML & CSS
-        level: 99%
-
-      - name: JavaScript & jQuery
-        level: 95%
-
-      - name: Bootstrap 3 & 4
-        level: 99%
-
-      - name: Node.js
-        level: 85%
-
-      - name: C#
-        level: 85%
-
-      - name: ASP.NET MVC (Framework & Core)
-        level: 90%
-
-      - name: ASP.NET Web API (Framework & Core)
-        level: 90%
-
-      - name: .NET Framework Winforms
-        level: 80%
-
-      - name: .NET Core WPF
-        level: 80%
-
-      - name: Vue.js 2
-        level: 90%
-
-      - name: Angular 1
-        level: 85%
-
-      - name: PHP
-        level: 90%
-
-      - name: SQL
-        level: 90%
-
-      - name: C++
-        level: 70%
-
-      - name: Java
-        level: 80%
-
-      - name: Python
-        level: 30%
-
-      - name: Groovy
-        level: 25%
-      
+      summary: Worked with a team to design a biology/chemistry educational game for undergraduates using the framework developed for the Department of Nursing.     
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

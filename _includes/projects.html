@@ -44,9 +44,13 @@
             {% for sublink in project.docs %}
               <li>
                 {% if sublink.link contains "http://" or sublink.link contains "https://" %}
-                <a href="{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
+                  <a href="{{ sublink.link }}" target="_blank">{{ sublink.title }}</a>                
                 {% else %}
-                <a href="{{ site.baseurl }}/assets/{{ sublink.link }}" target="_blank">{{ sublink.title }}</a><br />
+                  {% if sublink.link contains ".jpg" or sublink.link contains ".png" %}
+                    <a class="lightbox-link" onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ sublink.link }}', true, true);">{{ sublink.title }}</a>
+                  {% else %}
+                    <a href="{{ site.baseurl }}/assets/{{ sublink.link }}" target="_blank">{{ sublink.title }}</a>
+                  {% endif %}
                 {% endif %}
               </li>
             {% endfor %}

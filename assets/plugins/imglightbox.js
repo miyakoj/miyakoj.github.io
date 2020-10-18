@@ -13,17 +13,31 @@ var imgLightbox = (function(){
   return {
     config: {
       version: "1.0.4",
-      download: false
+      download: false,
+      externalOpen: false
     },
-    open: function (filename, download) {
+    open: function (filename, download, externalOpen) {
       if (typeof download !== "boolean") {download = this.config.download;}
+      if (typeof externalOpen !== "boolean") {externalOpen = this.config.externalOpen;}
 
       var parentEls = document.getElementById("imgLightbox").style;
-      var els = document.getElementById("imgLightbox-image-area").style;
       parentEls.display = "flex";
-      els.backgroundImage = "url('" + filename + "')";
-      els.backgroundRepeat = "no-repeat";
-      els.backgroundSize = "contain";
+
+      var imgArea = document.getElementById("imgLightbox-image-area");
+
+      // remove an existing img element from a previous lightbox display
+      var existingImg = imgArea.getElementsByTagName("img");
+      if (existingImg.length != 0) {
+        existingImg[0].remove();
+      }
+
+      // display images in an img element so that the image ratio is maintained
+      var img = document.createElement("img");
+      img.src = filename;
+      img.style.width = "100%";
+      img.style.height = "100%";
+      img.style.objectFit = "contain";
+      imgArea.appendChild(img);
 
       var dlbtn = document.getElementById("imgLightbox-button-download");
       if (download) {
@@ -32,6 +46,15 @@ var imgLightbox = (function(){
         dlbtn.download = filename;
       } else {
         dlbtn.style.display = "none";
+      }
+
+      var eobtn = document.getElementById("imgLightbox-button-external");
+      if (externalOpen) {
+        eobtn.style.display = "inline-block";
+        eobtn.href = filename;
+        eobtn.target = "_blank";
+      } else {
+        eobtn.style.display = "none";
       }
     },
     close: function () {

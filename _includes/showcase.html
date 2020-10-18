@@ -13,8 +13,8 @@
       {% for category in showcase.categories %}
       <div class="flexbox">
         {% for item in category.items %}
-          <img src="{{ site.baseurl }}/assets/{{ item.thumb }}" class="img-thumbnail" 
-            onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ item.link }}', true);" />
+          <img src="{{ site.baseurl }}/assets/{{ item.thumb }}" class="img-thumbnail lightbox-link" 
+            onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ item.link }}', true, true);" />
         {% endfor %}
       </div>
       {% endfor %}

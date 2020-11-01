@@ -25,7 +25,7 @@ sidebar:
     gitlab:
     bitbucket:
     twitter: 
-    stack-overflow: 7843806/miyakoj # Number/Username, e.g. 123456/alandoe
+    #stack-overflow: 7843806/miyakoj # Number/Username, e.g. 123456/alandoe
     codewars:
     codepen: miyakoj
     goodreads: # Number-Username, e.g. 123456-alandoe
@@ -184,7 +184,7 @@ experiences:
       company: Swiftlet Technology, Flint, MI
       summary: Developed a web-based tool for YMCA youth to track environmental impact using Angular 1.
 
-    - role: Web Developer
+    - role: Lead Web Developer
       time: May 2016 - Dec. 2016
       company: University of Michigan-Flint, Flint, MI
       summary: Developed web-based tools using HTML, CSS, JavaScript, AJAX, jQuery, Bootstrap, and PHP to assist Flint residents and city officials with navigating the Flint Water Crisis. (<a href="https://github.com/miyakoj/flintwaterpublic">Project repo</a>)

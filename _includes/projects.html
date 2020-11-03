@@ -47,7 +47,7 @@
                   <a href="{{ sublink.link }}" target="_blank">{{ sublink.title }}</a>                
                 {% else %}
                   {% if sublink.link contains ".jpg" or sublink.link contains ".png" %}
-                    <a class="lightbox-link" onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ sublink.link }}', true, true);">{{ sublink.title }}</a>
+                    <a class="lightbox-link" onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ sublink.link }}', {download: true, externalOpen: true});">{{ sublink.title }}</a>
                   {% else %}
                     <a href="{{ site.baseurl }}/assets/{{ sublink.link }}" target="_blank">{{ sublink.title }}</a>
                   {% endif %}

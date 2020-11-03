@@ -1,24 +1,24 @@
 /**
  * imglightbox
- * @version 1.0.4
- * @author Ferenc Czigler <serrin.salamander@gmail.com>
- * @see https://github.com/Serrin/
+ * @version 1.1.0
+ * @author Miyako Jones <mtj@miyako.io>
+ * @see https://github.com/miyakoj/
  *
- * <link href="imglightbox.css" rel="stylesheet" type="text/css">
- * <script src="imglightbox.js"></script>
+ * <link href="imglightbox.min.css" rel="stylesheet" type="text/css">
+ * <script src="imglightbox.min.js"></script>
  */
 
 var imgLightbox = (function(){
   "use strict";
   return {
     config: {
-      version: "1.0.4",
+      version: "1.1.0",
       download: false,
       externalOpen: false
     },
-    open: function (filename, download, externalOpen) {
-      if (typeof download !== "boolean") {download = this.config.download;}
-      if (typeof externalOpen !== "boolean") {externalOpen = this.config.externalOpen;}
+    open: function (filename, config = {}) {
+      if (typeof config.download !== "boolean") {config.download = this.config.download;}
+      if (typeof config.externalOpen !== "boolean") {config.externalOpen = this.config.externalOpen;}
 
       var parentEls = document.getElementById("imgLightbox").style;
       parentEls.display = "flex";
@@ -40,7 +40,7 @@ var imgLightbox = (function(){
       imgArea.appendChild(img);
 
       var dlbtn = document.getElementById("imgLightbox-button-download");
-      if (download) {
+      if (config.download) {
         dlbtn.style.display = "inline-block";
         dlbtn.href = filename;
         dlbtn.download = filename;
@@ -49,7 +49,7 @@ var imgLightbox = (function(){
       }
 
       var eobtn = document.getElementById("imgLightbox-button-external");
-      if (externalOpen) {
+      if (config.externalOpen) {
         eobtn.style.display = "inline-block";
         eobtn.href = filename;
         eobtn.target = "_blank";

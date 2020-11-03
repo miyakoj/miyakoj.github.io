@@ -14,7 +14,7 @@
       <div class="flexbox">
         {% for item in category.items %}
           <img src="{{ site.baseurl }}/assets/{{ item.thumb }}" class="img-thumbnail lightbox-link" 
-            onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ item.link }}', true, true);" />
+            onclick="imgLightbox.open('{{ site.baseurl }}/assets/{{ item.link }}', {download: true, externalOpen: true});" />
         {% endfor %}
       </div>
       {% endfor %}

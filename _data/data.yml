@@ -162,22 +162,27 @@ education:
           link: http://www.english.org
 
 experiences:
+    - role: Contract Software Engineer
+      time: Oct. 2020 - Present
+      company: Swiftlet Technology, Flint, MI
+      summary: Designed, developed, debugged, estimated, and maintained web, server, and desktop software.
+
     - role: Software Engineer
-      time: Mar. 2017 - Present
+      time: Mar. 2017 - Oct. 2020
       company: Swiftlet Technology, Flint, MI
       summary: Designed, developed, debugged, estimated, and maintained web, server, and desktop software.
       details:
         - item: Added functionality to existing websites using ASP.NET.
         - item: Updated existing web application data integrations and databases using Entity Framework and SQL Server.
-        -  item: Developed tools using .NET, Node.js, and Groovy to interface with Jira in order to achieve business goals.
-        -  item: Developed an Odoo POS addon in JavaScript.
-        -  item: Developed an Electron-based application to work with SMART cryptocurrency wallets and a supporting JSON-RPC tool. (<a href="https://github.com/swiftlettech/smart-sweeper">SmartSweeper</a> | <a href="https://github.com/miyakoj/node-smartcash">node-smartcash</a>)
-        -  item: Ported an existing .NET Framework application to .NET Core.
-        -  item: Developed .NET UI applications using Winforms.
-        -  item: Utilized the Selenium Framework for web application testing.
-        -  item: Developed web and desktop applications to display simultaneous video streams.
-        -  item: Developed dashboard web application with Stripe integration using Angular 1 and PHP.
-        -  item: Developed and maintained WordPress sites.
+        - item: Developed tools using .NET, Node.js, and Groovy to interface with Jira in order to achieve business goals.
+        - item: Developed an Odoo POS addon in JavaScript.
+        - item: Developed an Electron-based application to work with SMART cryptocurrency wallets and a supporting JSON-RPC tool. (<a href="https://github.com/swiftlettech/smart-sweeper">SmartSweeper</a> | <a href="https://github.com/miyakoj/node-smartcash">node-smartcash</a>)
+        - item: Ported an existing .NET Framework application to .NET Core.
+        - item: Developed .NET UI applications using Winforms.
+        - item: Utilized the Selenium Framework for web application testing.
+        - item: Developed web and desktop applications to display simultaneous video streams.
+        - item: Developed dashboard web application with Stripe integration using Angular 1 and PHP.
+        - item: Developed and maintained WordPress sites.
 
     - role: Contract Software Engineer
       time: Jan. 2017 - Mar. 2017

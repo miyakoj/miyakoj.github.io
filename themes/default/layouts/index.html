@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    {{ partial "head.html" . }}
+
+    <body>
+        <div id="container" class="d-flex flex-column justify-content-between">
+            <div id="content" class="d-flex">
+                {{ partial "left.html" . }}
+                {{ partial "sidebar.html" . }}
+            </div>
+        </div>
+    </body>
+</html>

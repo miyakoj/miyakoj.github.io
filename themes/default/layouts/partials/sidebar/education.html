@@ -1,0 +1,28 @@
+{{ $education := .Site.Data.sidebar.education.list }}
+
+<div id="education">
+    <h3 class="block-title">Education</h3>
+
+    <ul class="unstyled-list">
+        {{ range $degree := $education }}
+        <li>
+            <h5>{{$degree.degree}}</h5>
+            <span>{{$degree.school}}</span>
+            <span>{{$degree.gpa}}</span>
+            <span>{{$degree.date}}</span>
+
+            {{ with $details := $degree.details }}
+                <ul>
+                {{ range $item := $details }}
+                    {{ with $item.link }}
+                        <li><a href="{{ . }}" target="_blank">{{ $item.item }}</a></li>
+                    {{ else }}
+                        <li>{{ $item.item }}</li>
+                    {{ end }}
+                {{ end }}
+                </ul>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>

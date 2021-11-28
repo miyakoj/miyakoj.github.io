@@ -1,0 +1,10 @@
+baseURL = "http://miyako.io"
+languageCode = "en-us"
+title = "Miyako Jones' Portfolio"
+theme = "default"
+enableGitInfo = true
+enableRobotsTXT = true
+
+[params]
+    author = "Miyako Jones"
+    description = "4 years of combined experience with website development and software engineering. Organized, responsible, hard-working, a team player, and a self-starter."

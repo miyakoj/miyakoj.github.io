@@ -1,0 +1,12 @@
+{{ $profile := .Site.Data.sidebar.profile }}
+
+<h6>Resumé</h6>
+
+<div>
+    <a href="{{ .Site.BaseURL }}profile/{{$profile.resumeDoc}}" title="Word document version of resume">
+        <i class="icon far fa-file-word fa-2x"></i>
+    </a>
+    <a href="{{ .Site.BaseURL }}profile/{{$profile.resumePdf}}" title="PDF version of resume">
+        <i class="icon far fa-file-pdf fa-2x"></i>
+    </a>
+</div>

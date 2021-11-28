@@ -1,0 +1,11 @@
+list = [
+    {degree = "MS in Computer Science and Information Systems", university = "University of Michigan-Flint", gpa = "3.7/4.0", date = "April 2016", details = [
+        {item = "Software outreach student", link = "https://blogs.umflint.edu/softwareoutreach/2016/01/28/hello-world/"}
+    ]},
+    {degree = "BS in Computer Science", university = "University of Michigan-Flint", gpa = "3.61/4.0", date = "December 2012", details = [
+        {item = "Minor: Computer Information Systems", link = ""},
+        {item = "2012 Maize and Blue Scholar", link = "https://news.umflint.edu/2012/11/19/um-flint-maize-and-blue-recipients-december-2012/"},
+        {item = "2009 Google Scholar", link = "http://blog.mlive.com/higher-education/2009/09/university_of_michiganflint_st_1.html"},
+        {item = "Sigma Tau Delta Alum", link = "http://www.english.org"},
+    ]}
+]

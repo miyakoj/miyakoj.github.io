@@ -1,0 +1,12 @@
+{{ $profile := .Site.Data.sidebar.profile }}
+
+<h6>CV</h5>
+
+<div>
+    <a href="{{ .Site.BaseURL }}profile/{{$profile.cvDoc}}" title="Word document version of CV">
+        <i class="icon far fa-file-word fa-2x"></i>
+    </a>
+    <a href="{{ .Site.BaseURL }}profile/{{$profile.cvPdf}}" title="PDF version of CV">
+        <i class="icon far fa-file-pdf fa-2x"></i>
+    </a>
+</div>

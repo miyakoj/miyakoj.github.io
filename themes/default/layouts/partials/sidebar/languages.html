@@ -1,0 +1,11 @@
+{{ $languages := .Site.Data.sidebar.languages.list }}
+
+<div id="languages">
+  <h3 class="block-title">Languages</h3>
+
+  <ul class="unstyled-list">
+      {{ range $language := $languages }}
+      <li>{{$language.name}} <span class="lighter">({{$language.proficiency}})</span></li>
+      {{ end }}
+  </ul>
+</div>

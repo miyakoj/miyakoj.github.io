@@ -1,0 +1,20 @@
+<head>
+    <title>{{ .Site.Title }}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ .Site.Params.Author }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam:300,400,700">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{.Site.BaseURL}}favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/material-kit.min.css" />
+
+    {{ $options := (dict "targetPath" "css/site.css" "outputStyle" "compressed" "enableSourceMap" "true") }}
+    {{ $styles := resources.Get "css/site.scss" | resources.ExecuteAsTemplate "site.scss" . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen" />
+</head>

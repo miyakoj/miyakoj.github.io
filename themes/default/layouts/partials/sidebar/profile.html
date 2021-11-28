@@ -1,0 +1,18 @@
+{{ $profile := .Site.Data.sidebar.profile }}
+
+<div id="profile" class="pt-2 pb-3 px-3">
+    <img class="avatar mx-auto" src="{{ .Site.BaseURL }}images/{{ $profile.avatar }}" alt="profile picture" />
+
+    <h1 class="name text-center">{{ $profile.name }}</h1>
+    <h3 class="tagline text-center">{{ $profile.tagline }}</h3>
+    <h5 class="pronouns"><span class="bold">Pronouns:</span> {{ $profile.pronouns }}</h5>
+    <h5 class="personality"><span class="bold">Personality:</span> {{ $profile.personality }}</h5>
+
+    <div id="resume-links" class="text-center">
+      {{ partial "sidebar/resume_links.html" . }}
+    </div>
+
+    <div id="cv-links" class="text-center">
+      {{ partial "sidebar/cv_links.html" . }}
+    </div>
+</div>

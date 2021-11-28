@@ -1,0 +1,4 @@
+list = [
+    {name = "English", proficiency = "Native"},
+    {name = "Japanese", proficiency = "Elementary"}
+]

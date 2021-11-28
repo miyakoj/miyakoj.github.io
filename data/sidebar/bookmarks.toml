@@ -1,0 +1,9 @@
+list = [
+    {title = "Summary", link = "summary"},
+    {title = "Skills", link = "skills"},
+    {title = "Experience", link = "experience"},
+    {title = "Volunteer", link = "volunteer"},
+    {title = "Projects", link = "projects"},
+    {title = "Showcase", link = "showcase"},
+    {title = "Publications", link = "pubs"}
+]

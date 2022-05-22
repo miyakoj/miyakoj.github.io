@@ -1,12 +1,10 @@
 {{ $profile := .Site.Data.sidebar.profile }}
 
-<h6>CV</h5>
+<h6>CV</h6>
 
-<div>
-    <a href="{{ .Site.BaseURL }}profile/{{$profile.cvDoc}}" title="Word document version of CV">
-        <i class="icon far fa-file-word fa-2x"></i>
-    </a>
-    <a href="{{ .Site.BaseURL }}profile/{{$profile.cvPdf}}" title="PDF version of CV">
-        <i class="icon far fa-file-pdf fa-2x"></i>
-    </a>
-</div>
+<a href="{{ .Site.BaseURL }}/docs/profile/{{$profile.docs.cv.doc}}" title="Word document version of CV">
+    <i class="icon far {{.Site.Params.icons.word}} fa-lg"></i>
+</a>
+<a href="{{ .Site.BaseURL }}/docs/profile/{{$profile.docs.cv.pdf}}" title="PDF version of CV">
+    <i class="icon far {{.Site.Params.icons.pdf}} fa-lg"></i>
+</a>

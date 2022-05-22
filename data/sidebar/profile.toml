@@ -1,9 +1,0 @@
-name = "Miyako Jones"
-tagline = "Software Engineer"
-pronouns = "none"
-personality = "ISTJ, 5w6"
-avatar = "avatar.jpg"  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-resumeDoc = "Miyako_Jones_resume.docx"
-resumePdf = "Miyako_Jones_resume.pdf"
-cvDoc = "Miyako_Jones_CV.docx"
-cvPdf = "Miyako_Jones_CV.pdf"

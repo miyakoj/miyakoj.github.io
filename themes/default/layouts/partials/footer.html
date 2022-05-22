@@ -1,11 +1,18 @@
-<script src="{{.Site.BaseURL}}js/jquery.min.js"></script>
-<script src="{{.Site.BaseURL}}js/popper.min.js"></script>
-<script src="{{.Site.BaseURL}}js/bootstrap-material-design.min.js"></script>
-<script src="{{.Site.BaseURL}}js/nouislider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="{{.Site.BaseURL}}js/material-kit.min.js?v=2.0.7"></script>
+<script src="{{.Site.BaseURL}}js/material-kit.min.js"></script>
+<script src="{{ .Site.BaseURL }}glightbox/glightbox.min.js"></script>
 <script src="{{.Site.BaseURL}}js/site.js"></script>
 
-<footer class="text-center text-muted py-4">
-    &copy; Copyright {{ (time .Page.Lastmod).Year }} Miyako Jones. Last updated: {{ .Page.Lastmod.Format "January 2, 2006" }}.
+<footer class="text-center text-muted pt-4">
+    &copy; Copyright {{ (time .Page.Lastmod).Year }} Miyako Jones. Last updated: {{ .Page.Lastmod.Format "January 2, 2006" }}.<br />
+    The lightbox library is <a href="https://biati-digital.github.io/glightbox/" target="_blank">glightbox</a>.
 </footer>
+
+<div id="backToTop">
+    <span class="fa-stack">
+        <i class="fas fa-circle fa-stack-1x" aria-hidden="true"></i>
+        <i class="fas fa-arrow-alt-circle-up fa-stack-2x"></i>
+    </span>
+</div>

@@ -1,0 +1,18 @@
+{{$skills := .Site.Data.main.skills}}
+
+<div id="skills" class="mb-5">
+  {{ partial "main/heading.html" $skills }}
+
+  {{ range $skills.skills }}
+  <div class="progress-wrapper mb-3">
+    <div class="progress-info">
+        <div class="progress-percentage">
+            <span class="text-sm font-weight-bold">{{.name}}</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="{{.level}}" aria-valuemin="0" aria-valuemax="100" style="width: {{.level | safeCSS}};"></div>
+    </div>
+  </div>
+  {{end}}
+</div>

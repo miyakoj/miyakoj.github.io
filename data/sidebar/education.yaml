@@ -1,0 +1,28 @@
+list:
+    - degree:
+        name: MS in Computer Science and Information Systems
+        school: University of Michigan-Flint
+        gpa: 3.7/4.0
+        date: April 2016
+        details:
+            - item:
+                title: Software outreach student
+                link: https://blogs.umflint.edu/softwareoutreach/
+
+    - degree:
+        name: BS in Computer Science
+        school: University of Michigan-Flint
+        gpa: 3.61/4.0
+        date: December 2012
+        details:
+            - item:
+                title: "Minor: Computer Information Systems"
+            - item:
+                title: 2012 Maize and Blue Scholar
+                link: https://web.archive.org/web/20220516011727/https://news.umflint.edu/2012/11/19/um-flint-maize-and-blue-recipients-december-2012/
+            - item:
+                title: 2009 Google Scholar
+                link: https://web.archive.org/web/20220516011944/https://www.mlive.com/higher-education/2009/09/university_of_michiganflint_st_1.html
+            - item:
+                title: Sigma Tau Delta Alum
+                link: http://www.english.org

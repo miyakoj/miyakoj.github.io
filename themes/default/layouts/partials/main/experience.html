@@ -1,0 +1,6 @@
+{{$experience := .Site.Data.main.experience}}
+
+<div id="experience" class="mb-5">
+  {{ partial "main/heading.html" $experience }}
+  {{ partial "main/experience-list.html" $experience.experiences }}
+</div>

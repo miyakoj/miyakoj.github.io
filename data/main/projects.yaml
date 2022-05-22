@@ -1,0 +1,79 @@
+projects:
+  title: Projects
+  icon: fa-tools
+  categories:
+      - title: Current
+        items:
+          - title: LibManToUpdateWeb
+            timespan: Aug. 2021...
+            description: A website version of the utility that finds libraries with updates in your libman.json (the package.json of ASP.Net Core).
+
+          - title: eBook creator
+            timespan: Jan. 2020...
+            description: An app that takes online fanfiction and original stories and transforms them into eBooks for easy reading on tablets. I was semi-inspired by the way <a href="http://archiveofourown.org">Archive of Our Own</a> allows you to import the chapters of your fanfic from a different site.
+
+      - title: Completed
+        items:
+          - title: imgLightbox
+            timespan: Nov. 2020
+            link: https://github.com/miyakoj/imgLightbox
+            description: Vanilla JS lightbox fork to improve display and add additional features.
+
+          - title: LibManToUpdate
+            timespan: Oct. 2020
+            link: https://github.com/miyakoj/LibManToUpdate
+            description: A utility that finds libraries with updates in your libman.json (the package.json of ASP.Net Core).
+
+          - title: node-smartcash
+            timespan: May 2018 to Mar. 2019
+            link: https://github.com/miyakoj/node-smartcash
+            description: A fork of the node-bitcoin JSON-RPC library to add SmartCash features.
+
+          - title: javascript-natural-multisort
+            timespan: Feb. 2018
+            link: https://github.com/miyakoj/javascript-natural-multisort
+            description: A Vanilla JS sorting library fork to add "natural" sorting of objects and sorting in descending order.
+
+          - title: angularjs-natural-sort
+            timespan: Mar. 2018 to Apr. 2018
+            link: https://github.com/miyakoj/angularjs-natural-sort
+            description: Sort arrays of objects or simple one-dimensional arrays "naturally" in AngularJS based on <a href="https://github.com/overset/javascript-natural-sort" target="_blank">javascript-natural-sort</a>.
+
+          - title: Undergraduate Honors thesis
+            timespan: Jun. 2012 to Dec. 2012
+            link: docs/projects/Miyako_Jones_thesis_2012.pdf
+            description: "I became interested in genetic algorithms during my participation in the SURE program at Georgia Tech. I found a <a href='http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.6918'>paper by a team of French researchers</a> that used an interactive genetic algorithm to create website designs, but it used vectors instead of bit strings. The project consists of two parts: a paper and a program written in PHP."
+
+          - title: Undergraduate capstone project
+            timespan: Jan. 2012 to Apr. 2012
+            description: I worked with a group of three other Computer Science students to create an Electronic Medical Records (EMR) app for an Android tablet.
+            docs:
+              - title: EMR Project Screenshot 1
+                link: docs/projects/EMR/emr_patient-search-screenshot.jpg
+                type: image
+
+              - title: EMR Project Screenshot 2
+                link: docs/projects/EMR/emr_patient-form-screenshot.jpg
+                type: image
+
+              - title: EMR Project Use Case Diagram
+                link: docs/projects/EMR/emr_use-case-diagram.png
+                type: image
+
+      - title: Possible
+        items:
+          - title: Modification to a .NET Framework custom file/folder browser dialog
+            timespan: TBA
+            description: Modification to add file type filtering.
+
+          - title: Anime fan social site
+            timespan: TBA
+            description: A dating/friend site for otaku that includes matching based on liked anime and manga.
+
+          - title: Modification to my undergraduate Honors thesis
+            timespan: TBA
+            description: I want to parallelize it to improve performance. Also, I need to modify it so that it only optimizes style sheets.
+
+          - title: Fiction title generator
+            timespan: TBA
+            description: Generates titles for stories. Will have various configuration options.

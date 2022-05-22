@@ -1,0 +1,59 @@
+title: Skills & Proficiency
+icon: fa-wrench
+skills:
+  - name: HTML & CSS
+    level: 99%
+
+  - name: JavaScript
+    level: 90%
+
+  - name: Typescript
+    level: 80%
+
+  - name: jQuery
+    level: 95%
+
+  - name: Bootstrap 5
+    level: 90%
+
+  - name: Bootstrap 3 & 4
+    level: 99%
+
+  - name: Node.js
+    level: 85%
+
+  - name: C#
+    level: 85%
+
+  - name: ASP.NET MVC (Framework & Core)
+    level: 90%
+
+  - name: ASP.NET Web API (Framework & Core)
+    level: 90%
+
+  - name: .NET Framework Winforms
+    level: 80%
+
+  - name: .NET Core WPF
+    level: 80%
+
+  - name: Vue.js 2
+    level: 90%
+
+  - name: Angular 1
+    level: 85%
+
+  - name: PHP
+    level: 85%
+
+  - name: SQL
+    level: 90%
+
+  - name: C++
+    level: 60%
+
+  - name: Python
+    level: 20%
+
+  - name: Groovy
+    level: 25%

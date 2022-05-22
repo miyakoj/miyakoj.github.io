@@ -1,0 +1,14 @@
+{{ $websites := .Site.Data.sidebar.profile.websites }}
+
+{{with $websites}}
+    <div id="websites" class="mb-4">
+
+        <h6>Other Websites</h6>
+
+        <ul>
+            {{range $websites}}
+                <li><a href="{{.website.url}}" target="_blank" title="A genealogy blog.">{{.website.name}}</a></li>
+            {{end}}
+        </ul>
+    </div>
+{{end}}

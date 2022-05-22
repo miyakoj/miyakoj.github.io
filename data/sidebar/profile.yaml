@@ -1,0 +1,16 @@
+name: Miyako Jones
+tagline: Software Engineer
+pronouns: none
+personality: ISTJ, 5w6
+avatar: avatar.jpg
+docs:
+  resume:
+    doc: Miyako_Jones_resume.docx
+    pdf: Miyako_Jones_resume.pdf
+  cv:
+    doc: Miyako_Jones_CV.docx
+    pdf: Miyako_Jones_CV.pdf
+websites:
+  - website:
+      name: GeneJournal
+      url: https://www.genejournal.blog

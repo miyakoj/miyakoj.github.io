@@ -1,0 +1,17 @@
+title: Volunteering
+icon: fa-hand-holding-heart
+experiences:
+  - role: Volunteer Software Developer
+    time: Sep. 2009 - Jun. 2012
+    organization: University of Michigan-Flint (Dept. of Nursing)
+    summary: Worked with a team to develop a transcultural nursing educational game for undergraduates.
+    details:
+      - item: Created UML-based software artifacts such as use cases and sequence diagrams.
+      - item: Wrote a software requirements specification for a software component.
+      - item: Constructed companion software for the nursing game using Java.
+      - item: Created PHP scripts to transfer data from a Flash application to a remote MySQL database.
+
+  - role: Volunteer Software Developer
+    time: May 2010 - Aug. 2010
+    organization: University of Michigan-Flint (Dept. of Biology)
+    summary: Worked with a team to design a biology/chemistry educational game for undergraduates using the framework developed for the Department of Nursing.

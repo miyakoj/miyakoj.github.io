@@ -1,0 +1,15 @@
+showcase:
+  icon: fa-laptop-code
+  title: Showcase
+  categories:
+    - title: Websites
+      items:
+        - title: FortrezZ Dashboard
+          thumb: FortrezZ_thumb.jpg
+          full: FortrezZ.png
+          type: image
+
+        - title: Dr. L. Nathan Oaklander's Personal Website
+          thumb: lno_thumb.jpg
+          full: lno.jpg
+          type: image

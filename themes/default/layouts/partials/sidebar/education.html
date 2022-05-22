@@ -1,28 +1,28 @@
 {{ $education := .Site.Data.sidebar.education.list }}
 
-<div id="education">
+<div id="education" class="mb-4">
     <h3 class="block-title">Education</h3>
 
     <ul class="unstyled-list">
         {{ range $degree := $education }}
-        <li>
-            <h5>{{$degree.degree}}</h5>
-            <span>{{$degree.school}}</span>
-            <span>{{$degree.gpa}}</span>
-            <span>{{$degree.date}}</span>
+            <li>
+                <span class="d-block mb-0">{{.degree.name}}</span>
+                <span class="d-block"><strong>School:</strong> {{.degree.school}}</span>
+                <span class="d-block"><strong>GPA:</strong> {{.degree.gpa}}</span>
+                <span class="d-block"><strong>Graduation:</strong> {{.degree.date}}</span>
 
-            {{ with $details := $degree.details }}
-                <ul>
-                {{ range $item := $details }}
-                    {{ with $item.link }}
-                        <li><a href="{{ . }}" target="_blank">{{ $item.item }}</a></li>
-                    {{ else }}
-                        <li>{{ $item.item }}</li>
+                {{ with .degree.details }}
+                    <ul class="bulleted-list mb-3">
+                    {{ range . }}
+                        {{ if isset .item "link" }}
+                            <li><a href="{{ .item.link }}" target="_blank">{{ .item.title }}</a></li>
+                        {{ else }}
+                            <li>{{ .item.title }}</li>
+                        {{ end }}
                     {{ end }}
+                    </ul>
                 {{ end }}
-                </ul>
-            {{ end }}
-        </li>
+            </li>
         {{ end }}
     </ul>
 </div>

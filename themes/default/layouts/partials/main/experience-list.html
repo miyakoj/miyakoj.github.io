@@ -1,0 +1,23 @@
+{{ range . }}
+    <div class="role">
+        <h6 class="d-flex justify-content-between mb-0">
+            <span class="text-primary">
+                <strong>{{ .role | safeHTML }}</strong>
+            </span>
+            <span class="text-secondary">{{ .time }}</span>
+        </h6>
+
+        <p class="text-secondary">{{ .company }}</p>
+        <p class="mt-1">{{ .summary | safeHTML }}</p>
+
+        {{ with $details := .details }}
+            <ul class="details-list">
+                {{ range $item := $details }}
+                    <li>{{ $item.item | safeHTML }}</li>
+                {{ end }}
+            </ul>
+        {{ end }}
+
+        <div class="separator"></div>
+    </div>
+{{ end }}

@@ -1,0 +1,17 @@
+{{$showcase := .Site.Data.main.showcase.showcase}}
+
+<div id="showcase" class="mb-5">
+  {{ partial "main/heading.html" $showcase }}
+
+  {{ range $showcase.categories }}
+      <h5 class="mb-3">{{ .title }}</h5>
+
+      <div class="d-flex">
+          {{ range .items }}
+            <a href="{{ .Site.BaseURL }}/docs/showcase/{{ .full }}" class="glightbox" data-gallery="showcase-websites" data-title="{{.title}}" data-type="{{.type}}">
+              <img src="{{ .Site.BaseURL }}/docs/showcase/{{ .thumb }}" class="img-thumbnail" />
+            </a>
+          {{end}}
+      </div>
+  {{end}}
+</div>

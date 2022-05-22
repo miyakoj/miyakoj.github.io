@@ -1,0 +1,32 @@
+{{$projects := .Site.Data.main.projects.projects}}
+
+<div id="projects" class="mb-5">
+  {{ partial "main/heading.html" $projects }}
+
+  {{ range $projects.categories }}
+    <h5 class="mb-3">{{ .title }}</h5>
+
+    <div class="category mb-4">
+      {{ range .items }}
+        <div class="mb-2">
+          <h6 class="mb-0">
+            <span class="text-primary"><strong>{{ partial "main/link-generator.html" (dict "section" "projects" "subsection" "" "data" .) }}</strong></span>
+            <span class="text-secondary">({{.timespan}})</span>
+          </h6>
+
+          <p class="mt-0">{{.description | safeHTML}}</p>
+
+          {{ with .docs }}
+            <ul>
+            {{ range . }}
+              <li>
+                {{ partial "main/link-generator.html" (dict "section" "projects" "subsection" "" "data" .) }}
+              </li>
+            {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      {{end}}
+    </div>
+  {{end}}
+</div>

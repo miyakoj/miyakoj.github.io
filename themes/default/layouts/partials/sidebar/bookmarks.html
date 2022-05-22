@@ -1,11 +1,11 @@
 {{ $bookmarks := .Site.Data.sidebar.bookmarks.list }}
 
-<div id="bookmarks">
+<div id="bookmarks" class="mb-4">
   <h3 class="block-title">Quick Links</h3>
 
     <ul class="unstyled-list">
-        {{ range $bookmark := $bookmarks }}
-        <li id="{{$bookmark.link}}-bookmark"><a href="#{{$bookmark.link}}">{{$bookmark.title}}</a></li>
+        {{ range $bookmarks }}
+          <li id="{{.item.link}}-bookmark"><a href="#{{.item.link}}">{{.item.title}}</a></li>
         {{ end }}
     </ul>
 </div>

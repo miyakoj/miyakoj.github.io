@@ -1,10 +1,10 @@
 {{ $contact := .Site.Data.sidebar.contact }}
 
-<div id="contact">
+<div id="contact" class="mb-4">
   <ul class="unstyled-list">
     <li class="email">
         <i class="fas fa-envelope fa-md"></i>
-        <a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a>
+        {{ $contact.email }}
     </li>
 
     <li class="linkedin">
@@ -17,10 +17,10 @@
         <a href="http://github.com/{{ $contact.github }}" target="_blank">{{ $contact.github }}</a>
     </li>
 
-    <li class="stack-overflow fa-md">
+    {{/*  <li class="stack-overflow fa-md">
         <i class="fab fa-stack-overflow"></i>
         <a href="https://stackoverflow.com/users/{{ $contact.stackOverflow }}" target="_blank">{{ $contact.stackOverflow }}</a>
-    </li>
+    </li>  */}}
 
     <li class="codepen">
         <i class="fab fa-codepen fa-md"></i>

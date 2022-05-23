@@ -1,59 +1,88 @@
-title: Skills & Proficiency
+title: Skills
 icon: fa-wrench
 skills:
-  - name: HTML & CSS
-    level: 99%
+  categories:
+    - title: Languages
+      list: [HTML, CSS, JavaScript, Typescript, C#, PHP, SQL, C++, Java, Python]
 
-  - name: JavaScript
-    level: 90%
+    - title: Libraries
+      list: [jQuery, Fabric]
 
-  - name: Typescript
-    level: 80%
+    - title: Frameworks
+      list: [Bootstrap, .NET Framework/Core, ASP.NET MVC/Web API, Winforms, WPF, VueJS, AngularJS]
 
-  - name: jQuery
-    level: 95%
+    - title: Databases
+      list: [MySQL, SQLServer, SQLite, MariaDB, MongoDB, Firebase]
 
-  - name: Bootstrap 5
-    level: 90%
+    - title: Testing
+      list: [NUnit, Karma, Jasmine]
 
-  - name: Bootstrap 3 & 4
-    level: 99%
+    - title: Platforms
+      list: [Node.js, Electron]
 
-  - name: Node.js
-    level: 85%
+    - title: Methodologies
+      list: [Agile, UML, Material Design]
 
-  - name: C#
-    level: 85%
+    - title: OS
+      list: [Windows, Linux]
 
-  - name: ASP.NET MVC (Framework & Core)
-    level: 90%
+    - title: Software
+      list: [Visual Studio/Code, Git, Subversion, WordPress, Webpack]
 
-  - name: ASP.NET Web API (Framework & Core)
-    level: 90%
+    - title: Cloud
+      list: [Digital Ocean, Azure, Jira, Stripe, Recurly, Google Cloud]
 
-  - name: .NET Framework Winforms
-    level: 80%
+  bars:
+    - title: HTML & CSS
+      level: 99%
 
-  - name: .NET Core WPF
-    level: 80%
+    - title: JavaScript
+      level: 90%
 
-  - name: Vue.js 2
-    level: 90%
+    - title: Typescript
+      level: 80%
 
-  - name: Angular 1
-    level: 85%
+    - title: jQuery
+      level: 95%
 
-  - name: PHP
-    level: 85%
+    - title: Bootstrap 5
+      level: 90%
 
-  - name: SQL
-    level: 90%
+    - title: Bootstrap 3 & 4
+      level: 99%
 
-  - name: C++
-    level: 60%
+    - title: Node.js
+      level: 85%
 
-  - name: Python
-    level: 20%
+    - title: C#
+      level: 85%
 
-  - name: Groovy
-    level: 25%
+    - title: ASP.NET MVC (Framework & Core)
+      level: 90%
+
+    - title: ASP.NET Web API (Framework & Core)
+      level: 90%
+
+    - title: .NET Framework Winforms
+      level: 80%
+
+    - title: .NET Core WPF
+      level: 80%
+
+    - title: Vue.js 2
+      level: 90%
+
+    - title: Angular 1
+      level: 85%
+
+    - title: PHP
+      level: 85%
+
+    - title: SQL
+      level: 90%
+
+    - title: C++
+      level: 60%
+
+    - title: Python
+      level: 20%

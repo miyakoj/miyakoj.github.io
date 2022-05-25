@@ -11,10 +11,15 @@
           <div class="pub-items">
             {{ range .items }}
               <div class="pub-item mb-3">
-                <h6 class="mb-0"><span class="text-primary">
+                <h6 class="mb-2"><span class="text-primary">
                   <strong>{{ partial "main/link-generator.html" (dict "section" "publications" "subsection" "item" "data" .) }}</strong>
                 </span></h6>
-                <p class="text-secondary mb-1">{{ .source | safeHTML }}</p>
+
+                {{with .authors}}
+                <p class="mb-2"><strong>Authors: </strong> {{ . }}</p>
+                {{end}}
+
+                <p class="mb-3"><strong>Publication: </strong> {{ .source | safeHTML }}</p>
 
                 {{ with .docs }}
                   <h6>Related Media</h6>

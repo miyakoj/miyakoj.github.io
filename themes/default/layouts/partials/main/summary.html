@@ -1,9 +1,0 @@
-{{$careerProfile := .Site.Data.main.summary.careerProfile}}
-
-<div id="summary" class="mb-5">
-  {{ partial "main/heading.html" $careerProfile }}
-
-  {{$startYear := (time "2017-01-01").Year }}
-  {{$currentYear := now.Year}}
-  {{sub $currentYear $startYear}} {{$careerProfile.summary}}
-</div>
